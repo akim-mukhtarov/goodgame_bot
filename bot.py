@@ -3,7 +3,7 @@ from scene  import Scene
 from accounts_backend  import User
 
 bot = telebot.TeleBot(
-    "XXX",
+    "1459191581:AAFGr7LBctTAPWnjFnw8xWWucSGTBAPWQ2Q",
     parse_mode = "HTML"
 )
 
@@ -28,7 +28,7 @@ def pay(message):
         amount = 0
     else: 
         try:
-            amount = msg[1]
+            amount = int(msg[1])
             resp = user.pay(amount)
         except ValueError:
             bot.send_message(
