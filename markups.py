@@ -39,6 +39,8 @@ class TelegramFmtMarkups():
             keyboard = data['markup']
             if not keyboard['available_categories']:
                 return self.goBack
+            if keyboard['exceeded'] is True:
+                return self.goBack
 
             markup = teletypes.InlineKeyboardMarkup()
             for button in keyboard['available_categories']:
