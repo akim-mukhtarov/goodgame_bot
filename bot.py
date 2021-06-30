@@ -3,7 +3,7 @@ from scene  import Scene
 from accounts_backend  import User
 
 bot = telebot.TeleBot(
-    "1459191581:AAFGr7LBctTAPWnjFnw8xWWucSGTBAPWQ2Q",
+    "",
     parse_mode = "HTML"
 )
 
